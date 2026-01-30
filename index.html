@@ -362,7 +362,7 @@
     if (resultMatch) {
       const cls = resultMatch[1].trim();
       if (cls.includes("wn")) obj.result = "win";
-      else if (cls.includes("ls")) obj.result = "loss";
+      else if (cls.includes("ls")) obj.result = "pending";
       else if (cls.includes("postp")) obj.result = "pending";
     } else if (g.includes('class="res lv"')) {
       obj.result = "live";
